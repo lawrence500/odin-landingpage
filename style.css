@@ -87,8 +87,7 @@ body {
   height: 10vh;
 }
 
-.header-content,
-.footer-content {
+.header-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -282,3 +281,20 @@ main > div {
   height: 40px;
   width: 100px;
 }
+
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-weight: bold;
+}
+
