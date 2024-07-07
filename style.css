@@ -122,14 +122,15 @@ main > div {
 
 .hero-container {
   background-color: var(--dark-backgroound);
+
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .hero-content {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .hero-left,
