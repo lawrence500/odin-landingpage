@@ -1,0 +1,209 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+:root{
+    --dark-backgroound: #1F2937;
+    --light-blue: #3882F6;
+}
+
+.wrapper{
+
+    width: 80vw;
+    max-width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.header-container, .footer-container{
+    background-color: var(--dark-backgroound);
+    height: 10vh;
+}
+
+.header-content, .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-content h1{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header-content nav ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.header-content nav ul li {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main > div{
+    flex: 1;
+}
+
+.hero-container{
+    background-color: var(--dark-backgroound);    
+}
+
+.hero-content{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hero-left, .hero-right{flex: 1;}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+
+.hero-left h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #F9FAF8;
+    line-height: 3rem;
+}
+
+.hero-left p {
+    width: 95%;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-left button{
+    border: none;
+
+    background-color: #3882F6;
+    border-radius: 5px;
+    color: #F9FAF8;
+
+    font-weight: bold;
+
+    width: 100px;
+}
+
+.hero-right{
+    background-color: gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    width: 70vw;
+    max-width: 70vw;
+
+}
+
+.info-content h2{
+    text-align: center;
+
+    font-size: 36px;
+    font-weight: bold;
+    color:  #1F2937;
+}
+
+.info-content .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+
+
+.card .img{
+    width: 155px;
+    height: 130px;
+
+    border: 3px solid #3882F6;
+    border-radius: 15px;
+}
+
+.card p{
+    text-align: center;
+    width: 155px;
+}
+
+
+
+.quote-container{
+    background-color: #E5E7EB;
+}
+
+
+
