@@ -240,3 +240,8 @@ main > div {
 .quote-content h3{
   text-align: end;
 }
+
+.call-to-action-container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
