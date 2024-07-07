@@ -271,14 +271,12 @@ main > div {
 
 .call-to-action-content .right-side button{
   border: 3px solid white;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: #3882f6;
-
-  color: white;
   font-weight: bold;
-
-  height: 40px;
+  color: #f9faf8;
   width: 100px;
+
 }
 
 
